@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: aliceblue;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #05073a, #dc0606ca);
+    padding: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    width: 600px;
+    padding: 25px 30px;
+    border-radius: 25px;
+    height: 680px;
+    background:linear-gradient(135deg,#05073a,#06c0dcca);
+}
+
+.container .heading {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.container .heading::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b5b);
+}
+
+.container form .details {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+form .details .details-box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.details .details-box .detail {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: rgb(5 1 8);
+    width: auto;
+
+}
+
+.details .details-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+}
+
+.details .details-box input:focus,
+.details .details-box input:valid {
+    border-color: #9b59b5;
+
+}
+
+form .circle-form {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(227, 243, 6, 0.733);
+}
+
+form .button {
+    text-align: center;
+
+
+}
+
+form .button input {
+    cursor: pointer;
+
+    margin-right: 16px;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+@media(max-width:584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .details .details-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .circle-form {
+        width: 100%;
+    }
+
+    .container form .details {
+        max-height: 300px;
+        overflow: scroll;
+    }
+}

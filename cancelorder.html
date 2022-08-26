@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedDiv | cancel Order</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #05073a, #dc0606ca);
+        padding: 10px;
+    }
+
+
+
+
+    form {
+        background: linear-gradient(135deg, #05073a, #06c0dcca);
+
+        padding: 85px;
+        display: block;
+        border: 3px solid silver;
+        border-radius: 15px;
+    }
+
+    form h1 {
+        color: antiquewhite;
+        position: relative;
+        top: -24px;
+        display: block;
+    }
+
+    .form-group input {
+        display: block;
+        width: 300px;
+        height: 35px;
+        border-radius: 8px;
+    }
+
+
+    .btn {
+        position: absolute;
+        padding: 10px;
+        left: 45%;
+        margin-top: 11px;
+        border-radius: 8px;
+
+    }
+
+
+
+    .btn:hover {
+        background: rgb(129, 218, 176);
+    }
+</style>
+
+<body>
+    <form class="form" role="search">
+        <h1>Cancel Your Order</h1>
+        <div class="form-group">
+            <input type="search" autocomplete="off" placeholder="Enter order number"
+                title="Enter your order number here" id="ordernumber" autofocus required>
+        </div>
+
+        <button class="btn" type="button"><b>CANCEL ORDER<b></button>
+
+    </form>
+
+
+</body>
+
+</html>
